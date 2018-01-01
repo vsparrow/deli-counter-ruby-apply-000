@@ -38,3 +38,12 @@ end #take_a_number
 # If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
 # arguments : one
 #   katz_deli : which an array which holds customers
+
+def now_serving(katz_deli=katz_deli)
+  if katz_deli.length == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{katz_deli[0]}."
+    katz_deli.shift
+  end #if
+end #now_serving
